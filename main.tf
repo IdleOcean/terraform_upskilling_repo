@@ -70,7 +70,9 @@ resource "aws_instance" "zak-sparta-training-vm" {
         name = "zak-upskilling-vm"
     }
 }
-
+resource "aws_s3_bucket" "s3_tfupskill-bucket" {
+    bucket = "tfupskill-bucket" 
+}
 #---------------------------------------#
 #for any new provider run terraform init
 module "github" {
