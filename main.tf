@@ -67,7 +67,7 @@ resource "aws_instance" "zak-sparta-training-vm" {
     ami = var.ami-type # Linux unbuntu 18.04Lts
     instance_type = var.instance-size # size of instance in aws
     tags = {
-        name = "zak-hmrc-vm"
+        name = "zak-upskilling-vm"
     }
 }
 
